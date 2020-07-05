@@ -1,0 +1,780 @@
+@media screen and (max-width: 1440px) {
+  .wrapper-nav {
+    max-width: 1440px;
+    width: 100%;
+  }
+  .nav__link {
+    width: 55%;
+    max-width: 488px;
+  }
+  .logo {
+    padding-right: 0px;
+  }
+  .left-container {
+    width: 35%;
+    max-width: 712px;
+  }
+  .left-container__main-page {
+    top: 42.8%;
+  }
+  .left-container__dots-wrapper {
+    top: 61.5%;
+    left: 56%;
+  }
+  .centre {
+    padding-top: 34vh;
+    padding-left: 2%;
+    max-width: 695px;
+    width: 38%;
+  }
+  .right-container {
+    width: 47%;
+    max-width: 650px;
+  }
+  .complexity__container-video {
+    width: 82%;
+    max-width: 1180px;
+    margin: 90px 135px;
+  }
+  .complexity__info-video {
+    padding-left: 200px;
+  }
+  .large__circle-video {
+    left: 38%;
+  }
+}
+
+@media screen and (max-width: 1180px) {
+  .pages__pages-one {
+    right: 92.4%;
+  }
+  .pages__pages-two {
+    left: 92.4%;
+  }
+  .nav {
+    padding-left: 13%;
+  }
+  .left-container__main-page {
+    top: 42.8%;
+    left: 42.8%;
+  }
+  .left-container__dots-wrapper {
+    top: 61.5%;
+    left: 48%;
+  }
+  .centre__main-title {
+    font-size: 5.5rem;
+    width: 485px;
+  }
+  .furniture__title {
+    font-size: 2.7rem;
+    width: 265px;
+    &::after {
+      left: -62.3%;
+    }
+  }
+  .furniture__text {
+    width: 295px;
+  }
+  .decor__title {
+    font-size: 2.7rem;
+  }
+  .decor__text {
+    width: 275px;
+  }
+  .decor-right__block-text .button-learn {
+    margin-left: 44%;
+  }
+  .complexity__container-video {
+    width: 82%;
+    max-width: 1180px;
+    margin: 90px 105px;
+  }
+  .complexity__info-video {
+    padding-left: 100px;
+  }
+  .complexity__title {
+    font-size: 2.7rem;
+    width: 460px;
+    &::after {
+      left: -26.2%;
+      width: 100px;
+    }
+  }
+  .large__circle-video {
+    left: 30%;
+  }
+  .aboutus__title {
+    font-size: 2.7rem;
+    width: 245px;
+    &::after {
+      left: -68%;
+    }
+  }
+  .aboutus__text {
+    width: 302px;
+  }
+}
+
+// Labtop Adaptive 990px
+@media screen and (max-width: 900px) {
+  .nav {
+    width: 100%;
+    max-width: 212px;
+    padding-left: 0;
+    padding-left: 10%;
+  }
+  .nav__link {
+    display: none;
+  }
+  .logo {
+    width: 212px;
+    padding-right: 0;
+  }
+  .line-wooder {
+    width: 54px;
+    margin-left: 39px;
+    margin-top: 15px;
+  }
+  .pages__pages-one {
+    right: 92.4%;
+  }
+  .pages__pages-two {
+    left: 92.4%;
+  }
+}
+
+// Mobile & Tab Adaptive 768px
+@media screen and (max-width: 768px) {
+  .right-container__main-text, //Display None Mobile Adaptive
+  .left-container__main-page,
+  .left-container__main-page,
+  .left-container__dots-wrapper,
+  .f,
+  .d,
+  .a,
+  .v {
+    display: none;
+  }
+  .info-icon {
+    display: none;
+  }
+  .pages__pages-one,
+  .pages__pages-two {
+    display: none;
+  }
+  .info-icon {
+    display: none;
+  } // Close Display None Mobile Adaptive
+  .nav {
+    padding-left: 16%;
+  }
+  .siderbar {
+    // Burger-Menu Adaptive Mobile
+    width: 100%;
+    height: 100%;
+    background: url(/src/images/png/video-background.png);
+    z-index: 3;
+    box-shadow: 0 0 12px #000;
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.8s;
+    transform: translate(-200px, 0);
+    background-size: 350%;
+    background-position: 60%;
+  }
+  .siderbar-menu {
+    margin-top: 34%;
+    text-align: center;
+    padding-left: 0;
+  }
+  .about, // Menu Mobile
+  .home,
+  .howwework,
+  .products,
+  .siderbar-mene__item {
+    font-size: 1.7em;
+    margin-bottom: 10%;
+  }
+  .close {
+    // Close Menu X target
+    top: -223px;
+  }
+  .centre {
+    padding-top: 34vh;
+    max-width: 768px;
+    width: 100%;
+    padding-left: 30px;
+  }
+  .right-container__main-network {
+    left: 91.5%;
+  }
+  .furniture {
+    max-width: 768px;
+    width: 100%;
+    display: block;
+    margin-bottom: 50px;
+  }
+  .furniture-left__block-text {
+    width: 345px;
+    max-width: 100%;
+    margin-left: 32.9%;
+    margin-bottom: 50px;
+  }
+  .furniture-right__block-img,
+  .decor-left__block-img,
+  .aboutus-left__block-img {
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-bottom: 50px;
+  }
+  .decor {
+    // Decor
+    max-width: 768px;
+    width: 100%;
+    display: block;
+    margin-bottom: 100px;
+  }
+  .decor-right__block-text {
+    width: 100%;
+    max-width: 300px;
+    margin-right: 32.2%;
+  }
+  .quality {
+    width: 100%;
+    max-width: 768px;
+  }
+  .quality__videos {
+    display: block;
+    width: 100%;
+    max-width: 768px;
+  }
+  .video-column {
+    width: 202px;
+    margin: 0 auto;
+    margin: 0 auto 50px;
+    &:last-child {
+      margin-bottom: 0px;
+    }
+  }
+  .complexity {
+    // Complexity Video Play
+    width: 100%;
+    background-size: cover;
+    margin-bottom: 100px;
+  }
+  .complexity__container-video {
+    width: 80.7%;
+    max-width: 768px;
+    margin: 90px 72.5px;
+  }
+  .complexity__info-video {
+    padding-left: 50px;
+  }
+  .complexity__title {
+    width: 410px;
+    font-size: 2.4rem;
+    margin-bottom: 100px;
+    &::after {
+      width: 50px;
+      top: 24%;
+      left: -15.2%;
+    }
+  }
+  .complexity__text {
+    width: 305px;
+    margin-bottom: 100px;
+    font-size: 1rem;
+    &::after {
+      top: 9%;
+      left: -12.8%;
+      width: 25px;
+      height: 2px;
+    }
+  }
+  .large__circle-video {
+    // Video Play Icon
+    left: 20%;
+    top: -2.4%;
+    width: 670px;
+    height: 630px;
+    .large__circle-tria {
+      position: relative;
+      top: 64%;
+      left: 40%;
+      &::after {
+        border: 100px solid transparent;
+        border-left: 163px solid #fff;
+      }
+      &:hover {
+        &::after {
+          border: 100px solid transparent;
+          border-left: 163px solid #bea67c;
+          opacity: 0.3;
+          transform: scale(1.05);
+        }
+      }
+    }
+  }
+  .aboutus {
+    max-width: 768px;
+    width: 100%;
+    display: block;
+    margin-bottom: 100px;
+  }
+  .aboutus-right__block-text {
+    width: 100%;
+    max-width: 342px;
+    margin-left: 32.5%;
+  }
+}
+
+// Mobile Adaptive 600px
+@media screen and (max-width: 600px) {
+  .header {
+    width: 100%;
+    margin-bottom: 265px;
+  }
+  .nav {
+    padding-left: 20%;
+  }
+  .logo .line-wooder {
+    position: absolute;
+    width: 60px;
+    height: 4px;
+    background-color: #bea67c;
+    margin-left: 46px;
+    margin-top: 17px;
+  }
+  .siderbar {
+    // Burger-Menu Adaptive Mobile
+    position: fixed;
+    width: 600px;
+    height: 100%;
+    background: url(/src/images/png/video-background.png);
+    z-index: 3;
+    box-shadow: 0 0 12px #000;
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.8s;
+    transform: translate(-200px, 0);
+    background-size: 350%;
+    background-position: 60%;
+    &:target {
+      // Open JS
+      opacity: 1;
+      visibility: visible;
+      transform: translate(0, 0px);
+      .siderbar-menu {
+        transform: translate(0px, 0px);
+        opacity: 1;
+      }
+    }
+  }
+  .siderbar-menu {
+    margin-top: 43%;
+    text-align: center;
+    padding-left: 0px;
+  }
+  .about, // Menu Mobile
+  .home,
+  .howwework,
+  .products,
+  .siderbar-mene__item {
+    font-size: 1.7em;
+    margin-bottom: 10%;
+  }
+  .close {
+    // Close Menu X target
+    top: -226px;
+  }
+  .centre {
+    // Main Centre
+    width: 695px;
+    padding-left: 0;
+    padding-top: 15vh;
+  }
+  .centre__main-centre {
+    max-width: 600px;
+    width: 100%;
+    margin-top: 40%;
+  }
+  .centre__main-title {
+    font-size: 5rem;
+    width: 448px;
+  }
+  .right-container__main-network {
+    position: absolute;
+    left: 89.5%;
+    top: 95%;
+  }
+  .main {
+    display: block;
+    overflow: hidden;
+    padding-top: 0;
+  }
+  .furniture {
+    max-width: 600px;
+    display: block;
+    margin-bottom: 50px;
+  }
+  .furniture-left__block-text {
+    width: 345px;
+    margin-bottom: 50px;
+    margin-left: 26%;
+  }
+  .furniture__title {
+    width: 245px;
+    font-size: 2.5rem;
+    &::after {
+      left: -51.3%;
+      width: 100px;
+    }
+  }
+  .furniture__text, // Text <p> // Furniture; Decor; Quality; About us
+  .decor__text,
+  .quality__text,
+  .aboutus__text {
+    font-size: 0.9rem;
+  }
+  .furniture-right__block-img {
+    margin-right: 30px;
+    margin-left: 30px;
+  }
+  .furniture-background, // background Furniture; Decor; About US
+  .decor-background,
+  .aboutus-background {
+    font-size: 7rem;
+  }
+  .decor {
+    // Decor
+    max-width: 600px;
+    display: block;
+    margin-bottom: 100px;
+  }
+  .decor-right__block-text {
+    width: 305px;
+    margin-right: 24.5%;
+  }
+  .decor__title {
+    width: 152px;
+    font-size: 2.5rem;
+    margin-left: 50%;
+    &::after {
+      width: 100px;
+      left: 111%;
+    }
+  }
+  .decor-left__block-img {
+    margin-right: 30px;
+    margin-left: 30px;
+    margin-bottom: 50px;
+  }
+  .quality {
+    // Wooder - Quality Video info
+    max-width: 600px;
+    width: 100%;
+    margin-bottom: 100px;
+  }
+  .quality-block {
+    width: 100%;
+    max-width: 540px;
+    margin-right: 30px;
+    margin-left: 30px;
+  }
+  .quality__title {
+    font-size: 2.5rem;
+    width: 300px;
+    margin: 0 auto;
+  }
+  .quality__text {
+    width: 355px;
+    margin: 0 auto 80px;
+  }
+  .quality__videos {
+    display: block;
+    width: 100%;
+    max-width: 600px;
+  }
+  .video-column {
+    width: 202px;
+    margin: 0 auto;
+    margin: 0 auto 50px;
+    &:last-child {
+      margin-bottom: 0px;
+    }
+  }
+  .complexity {
+    // Complexity Video Play
+    width: 100%;
+    height: 883px;
+    background-size: cover;
+    margin-bottom: 100px;
+  }
+  .complexity__container-video {
+    width: 90%;
+    max-width: 600px;
+    margin: 12% 30px;
+  }
+  .complexity__info-video {
+    padding-left: 50px;
+  }
+  .complexity__title {
+    width: 300px;
+    font-size: 1.7rem;
+    margin-bottom: 100px;
+    &::after {
+      width: 50px;
+      top: 24%;
+      left: -21.2%;
+    }
+  }
+  .complexity__text {
+    width: 295px;
+    margin-bottom: 100px;
+    font-size: 0.9rem;
+    &::after {
+      top: 9%;
+      left: -12.8%;
+      width: 25px;
+      height: 2px;
+    }
+  }
+  .large__circle-video {
+    // Video Play Icon
+    left: 4%;
+    top: -2.4%;
+    width: 670px;
+    height: 630px;
+    .large__circle-tria {
+      position: relative;
+      top: 64%;
+      left: 40%;
+      &::after {
+        border: 100px solid transparent;
+        border-left: 163px solid #fff;
+      }
+      &:hover {
+        &::after {
+          border: 100px solid transparent;
+          border-left: 163px solid #bea67c;
+          opacity: 0.3;
+          transform: scale(1.05);
+        }
+      }
+    }
+  }
+  .aboutus {
+    // About us
+    display: block;
+    position: relative;
+    width: 100%;
+    max-width: 600px;
+    margin-bottom: 100px;
+  }
+  .aboutus-right__block-text {
+    max-width: 345px;
+    width: 100%;
+    margin-left: 26.3%;
+  }
+  .aboutus__title {
+    width: 230px;
+    font-size: 2.5rem;
+    &::after {
+      width: 100px;
+      left: -127px;
+    }
+  }
+  .aboutus-left__block-img {
+    margin-right: 30px;
+    margin-left: 30px;
+    margin-bottom: 50px;
+    & img {
+      max-width: 589px;
+      width: 100%;
+    }
+  }
+}
+
+// Mobile Adaptive 450px
+@media screen and (max-width: 450px) {
+  .menu {
+    font-size: 0.8rem;
+    margin-top: 3px;
+  }
+  .logo {
+    font-size: 1.47rem;
+    width: 160px;
+    margin: 0 auto;
+    padding-right: 0;
+    margin-right: 0;
+    .line-wooder {
+      width: 46px;
+      height: 3px;
+      margin-left: 32px;
+      margin-top: 12px;
+    }
+  }
+  .info {
+    padding-right: 32px;
+  }
+  .siderbar {
+    // Burger-Menu Adaptive Mobile 450px
+    width: 450px;
+    height: 100%;
+    background: url(/src/images/png/video-background.png) 60%/450%;
+    &:target {
+      // Open JS
+      opacity: 1;
+      visibility: visible;
+      transform: translate(0, 0px);
+      .siderbar-menu {
+        transform: translate(0px, 0px);
+        opacity: 1;
+      }
+    }
+  }
+  .siderbar-menu {
+    margin-top: 57%;
+    text-align: center;
+  }
+  .centre__main-centre {
+    // Main Centre
+    max-width: 450px;
+    width: 100%;
+    margin-top: 60%;
+  }
+  .centre__main-title {
+    font-size: 3.5rem;
+    width: 345px;
+  }
+  .button-main {
+    width: 260px;
+    .learn-more {
+      padding-left: 0px;
+    }
+    .arrow {
+      display: none; //Hover None btn-main
+    }
+  }
+  .furniture {
+    max-width: 450px;
+    display: block;
+    margin-bottom: 50px;
+  }
+  .furniture-left__block-text {
+    width: 280px;
+    margin-left: 22.5%;
+  }
+  .furniture__title {
+    font-size: 2rem;
+    width: 205px;
+    &::after {
+      left: -34.3%;
+      width: 60px;
+    }
+  }
+  .furniture__text {
+    &::after {
+      top: 10%;
+    }
+  }
+  .furniture__text, // Text <p> // Furniture; Decor; Quality; About us
+  .decor__text,
+  .quality__text,
+  .aboutus__text {
+    font-size: 0.9rem;
+    width: 275px;
+  }
+  .furniture-background, // Background None 450px Mobile
+  .decor-background,
+  .aboutus-background {
+    display: none;
+  }
+  .decor {
+    // Decor
+    max-width: 450px;
+    display: block;
+    margin-bottom: 100px;
+  }
+  .decor-right__block-text {
+    width: 305px;
+    margin-right: 20.5%;
+  }
+  .decor__title {
+    width: 125px;
+    font-size: 2rem;
+    margin-left: 50%;
+    &::after {
+      width: 60%;
+      left: 111%;
+    }
+  }
+  .decor__text {
+    &::after {
+      top: 12%;
+      left: 106%;
+    }
+  }
+  .decor-right__block-text .button-learn {
+    margin-left: 39%;
+  }
+  .quality {
+    // Wooder - Quality Video info
+    max-width: 450px;
+    width: 100%;
+    margin: 0 auto 155px;
+  }
+  .quality-block {
+    width: 100%;
+    max-width: 450px;
+    margin-right: 0;
+    margin-left: 0;
+  }
+  .quality__title {
+    font-size: 2rem;
+    width: 250px;
+    margin: 0 auto;
+  }
+  .quality__text {
+    margin: 0 auto;
+    width: 340px;
+    margin-bottom: 80px;
+  }
+  .quality__videos {
+    max-width: 450px;
+    width: 100%;
+  }
+  .complexity__container-video {
+    // Complexity Video Play
+    max-width: 450px;
+    width: 86%;
+  }
+  .large-circle {
+    display: none; // Play Circle + Hover None 450px Mobile
+  }
+  .button-video {
+    width: 260px;
+  }
+  .aboutus {
+    // About us
+    display: block;
+    position: relative;
+    width: 100%;
+    max-width: 450px;
+    margin-bottom: 100px;
+  }
+  .aboutus-right__block-text {
+    max-width: 250px;
+    width: 100%;
+    margin-left: 22.5%;
+  }
+  .aboutus__title {
+    font-size: 2rem;
+    width: 190px;
+    &::after {
+      width: 60px;
+      left: -38%;
+    }
+  }
+}
