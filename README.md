@@ -4,9 +4,7 @@ Html
 
 Scss
 
-JS ( coming soon )
-
-Jquery ( coming soon )
+Jquery 
 
 Adaptive + Responsive 1440 | 1180 laptop | 900 laptop | 768 laptop + mobile | 450 mobile S |
 
