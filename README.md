@@ -1,3 +1,19 @@
+# Landing Page Wooder
+
+Html
+
+Scss
+
+JS ( coming soon )
+
+Jquery ( coming soon )
+
+Adaptive + Responsive 1440 | 1180 laptop | 900 laptop | 768 laptop + mobile | 450 mobile S |
+
+Сross-browser ( coming soon )
+
+--------------------------------------------------------------
+
 # Gulpweb
 
 Обновленная сборка gulp
