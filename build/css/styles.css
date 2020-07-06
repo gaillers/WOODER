@@ -7,9 +7,10 @@
   max-width: 1920px;
   width: 100%;
   display: flex;
+  position: fixed;
   justify-content: space-between;
   align-items: center;
-  z-index: 1; }
+  z-index: 2; }
 
 .burger {
   position: relative;
@@ -48,7 +49,7 @@
   width: 300px;
   height: 100%;
   background: #000;
-  z-index: 3;
+  z-index: 1000;
   background-size: 500% 100%;
   background-position: 30% 100%;
   box-shadow: 0 0 12px black;
@@ -186,12 +187,15 @@
   font-style: normal;
   letter-spacing: 10.8px;
   text-align: center;
-  padding-right: 100px;
-  cursor: pointer; }
+  padding-right: 100px; }
   .logo p {
     text-decoration: none;
     text-transform: uppercase;
-    color: #fff; }
+    color: #fff;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none; }
   .logo .line-wooder {
     position: absolute;
     width: 64px;
@@ -707,7 +711,8 @@
   font-weight: 700;
   text-align: left;
   letter-spacing: 2.87px;
-  text-transform: uppercase; }
+  text-transform: uppercase;
+  cursor: pointer; }
   .button-learn::after {
     position: relative;
     bottom: 0;
@@ -1114,7 +1119,8 @@
   background: 0 0;
   border: 1px solid #fff;
   align-items: center;
-  transition: all 0.8s ease 0s; }
+  transition: all 0.8s ease 0s;
+  cursor: pointer; }
   .button-video .watch-video {
     width: 125px;
     font-family: 'ProximaNova';
@@ -1898,8 +1904,8 @@
   margin: 0;
   padding: 0; }
 
-body.lock {
-  overflow: hidden; }
+body {
+  overflow-x: hidden; }
 
 a {
   text-decoration: none; }
