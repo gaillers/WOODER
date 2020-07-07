@@ -1,4 +1,4 @@
-@import 'fonts';
+@import '../common/fonts.scss';
 
 * {
   margin: 0;
@@ -14,9 +14,9 @@ a {
 }
 // <SVG>
 
-.svg-info, .svg-network {
+.svg-info,
+.svg-network {
   display: none;
 }
 
 //</SVG>
-

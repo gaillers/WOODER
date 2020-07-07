@@ -348,7 +348,7 @@
   height: 103.5vh;
   top: 0;
   left: 53.5%;
-  background: url(/src/images/png/r.png); }
+  background: url(/build/images/png/r.png); }
 
 .left-bg {
   position: absolute;
@@ -366,6 +366,13 @@
   max-width: 712px;
   position: relative; }
 
+.vertical {
+  position: fixed;
+  top: 36.7%;
+  left: 15.9%;
+  margin: 0 auto;
+  z-index: 10; }
+
 .left-container__main-page {
   width: 53px;
   height: 55px;
@@ -377,10 +384,10 @@
   color: #bea67c;
   transform: rotate(90deg);
   margin: 0 auto;
-  position: absolute;
   left: 52%;
   top: 42.8%; }
-  .left-container__main-page .line-page {
+  .left-container__main-page::after {
+    content: '';
     position: absolute;
     width: 51px;
     height: 4px;
@@ -391,10 +398,7 @@
 .left-container__dots-wrapper {
   width: 10px;
   height: 160px;
-  margin: 0 auto;
-  position: absolute;
-  left: 54.9%;
-  top: 62.5%; }
+  margin: 104px 25px 0 auto; }
   .left-container__dots-wrapper span {
     margin-bottom: 40px; }
 
@@ -403,16 +407,15 @@
   width: 10px;
   height: 10px;
   border-radius: 5px;
-  background-color: #bea67c;
-  cursor: pointer; }
+  background-color: #bea67c; }
 
-.dot {
+.dot.passive {
   display: block;
   width: 10px;
   height: 10px;
   border-radius: 5px;
   background-color: #303030;
-  cursor: pointer; }
+  opacity: 0.5; }
 
 .f {
   position: absolute;
@@ -637,9 +640,9 @@
   background-color: #bea67c; }
 
 .right-container__main-network {
-  position: absolute;
-  left: 96.3%;
-  top: 95%; }
+  position: fixed;
+  left: 96.5%;
+  top: 94%; }
   .right-container__main-network img {
     width: 22px;
     height: 25px; }
@@ -1247,7 +1250,7 @@
     width: 100%; }
 
 .aboutus-background {
-  width: 161%;
+  width: 180%;
   height: 45%;
   position: absolute;
   opacity: 0.9;
@@ -1259,7 +1262,7 @@
   color: #d0d0d033;
   text-transform: uppercase;
   top: 28%;
-  right: 14%; }
+  right: -3%; }
 
 .a {
   width: 240px;
@@ -1321,6 +1324,8 @@
   .left-container__dots-wrapper {
     top: 61.5%;
     left: 56%; }
+  .vertical {
+    left: 9.9%; }
   .centre {
     padding-top: 34vh;
     padding-left: 2%;
@@ -1892,13 +1897,13 @@
   font-family: 'ProximaNova';
   font-style: normal;
   font-weight: bold;
-  src: local("ProximaNova"), url(/src/fonts/ProximaNova-Bold.ttf) format("tryetype"), url(/build/fonts/ProximaNova-Bold.woff) format("woff"), url(/build/fonts/ProximaNova-Bold.woff2) format("woff2"); }
+  src: local("ProximaNova"), url(/src/fonts/ProximaNova-Bold.ttf) format("truetype"), url(/build/fonts/ProximaNova-Bold.woff) format("woff"), url(/build/fonts/ProximaNova-Bold.woff2) format("woff2"); }
 
 @font-face {
   font-family: 'ProximaNova';
   font-style: normal;
   font-weight: normal;
-  src: local("ProximaNova"), url(/src/fonts/ProximaNova-Regular.ttf) format("tryetype"), url(/build/fonts/ProximaNova-Regular.woff) format("woff"), url(/build/fonts/ProximaNova-Regular.woff2) format("woff2"); }
+  src: local("ProximaNova"), url(/src/fonts/ProximaNova-Regular.ttf) format("truetype"), url(/build/fonts/ProximaNova-Regular.woff) format("woff"), url(/build/fonts/ProximaNova-Regular.woff2) format("woff2"); }
 
 * {
   margin: 0;
@@ -1910,17 +1915,18 @@ body {
 a {
   text-decoration: none; }
 
-.svg-info, .svg-network {
+.svg-info,
+.svg-network {
   display: none; }
 
 @font-face {
   font-family: 'ProximaNova';
   font-style: normal;
   font-weight: bold;
-  src: local("ProximaNova"), url(/src/fonts/ProximaNova-Bold.ttf) format("tryetype"), url(/build/fonts/ProximaNova-Bold.woff) format("woff"), url(/build/fonts/ProximaNova-Bold.woff2) format("woff2"); }
+  src: local("ProximaNova"), url(/src/fonts/ProximaNova-Bold.ttf) format("truetype"), url(/build/fonts/ProximaNova-Bold.woff) format("woff"), url(/build/fonts/ProximaNova-Bold.woff2) format("woff2"); }
 
 @font-face {
   font-family: 'ProximaNova';
   font-style: normal;
   font-weight: normal;
-  src: local("ProximaNova"), url(/src/fonts/ProximaNova-Regular.ttf) format("tryetype"), url(/build/fonts/ProximaNova-Regular.woff) format("woff"), url(/build/fonts/ProximaNova-Regular.woff2) format("woff2"); }
+  src: local("ProximaNova"), url(/src/fonts/ProximaNova-Regular.ttf) format("truetype"), url(/build/fonts/ProximaNova-Regular.woff) format("woff"), url(/build/fonts/ProximaNova-Regular.woff2) format("woff2"); }

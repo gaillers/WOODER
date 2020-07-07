@@ -97,3 +97,51 @@ $(function(){  scroll // scroll Nav & Siderbar
     return false;
   });
 });
+
+let circleOne = document.getElementById('circle one')
+let circleTwo = document.getElementById('circle two')
+let circleThree = document.getElementById('circle three')
+let circleFour = document.getElementById('circle four')
+
+document.addEventListener("scroll", function() {
+	scroll = window.scrollY;
+	console.log(scroll)
+  let counter = document.getElementById('counter');
+	
+	if ($(window).width() < 1900) {
+	
+	if (scroll <= 600) {screen = 'header'} // Screen
+	else if (scroll >= 490 && scroll <= 1900) {screen = 'main'}
+	else if (scroll >= 1950 && scroll <= 3000) {screen = 'quality'}
+	else if (scroll >= 3300) {screen = 'aboutus'}
+	} else {
+		if (scroll <= 650) {screen = 'header'}
+		else if (scroll >= 650 && scroll <= 1900) {screen = 'main'}
+		else if (scroll >= 2050 && scroll <= 3556) {screen = 'quality'}
+    else if (scroll >= 3570) {screen = 'aboutus'}
+  } // Dots
+	if (screen==='header') {counter.innerText = '01';
+	circleOne.style.opacity = '1',circleOne.style.backgroundColor = '#bea67c';
+	circleTwo.style.opacity = '.5',circleTwo.style.backgroundColor = '#303030';
+	circleThree.style.opacity = '.5',circleThree.style.backgroundColor = '#303030';
+  circleFour.style.opacity = '.5',circleFour.style.backgroundColor = '#303030';
+	}
+	if (screen==='main') {counter.innerText = '02';
+	circleOne.style.opacity = '.5',circleOne.style.backgroundColor = '#303030';
+	circleTwo.style.opacity = '1',circleTwo.style.backgroundColor = '#bea67c';
+	circleThree.style.opacity = '.5',circleThree.style.backgroundColor = '#303030';
+  circleFour.style.opacity = '.5',circleFour.style.backgroundColor = '#303030';
+}
+	if (screen==='quality') {counter.innerText = '03';
+	circleOne.style.opacity = '.5',circleOne.style.backgroundColor = '#303030';
+	circleTwo.style.opacity = '.5',circleTwo.style.backgroundColor = '#303030';
+	circleThree.style.opacity = '1',circleThree.style.backgroundColor = '#bea67c';
+  circleFour.style.opacity = '.5',circleFour.style.backgroundColor = '#303030';
+	}
+	if (screen==='aboutus') {counter.innerText = '04';
+	circleOne.style.opacity = '.5',circleOne.style.backgroundColor = '#303030';
+	circleTwo.style.opacity = '.5',circleTwo.style.backgroundColor = '#303030';
+	circleThree.style.opacity = '.5',circleThree.style.backgroundColor = '#303030';
+  circleFour.style.opacity = '1',circleFour.style.backgroundColor = '#bea67c';
+}
+});

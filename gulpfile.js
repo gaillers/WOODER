@@ -14,7 +14,6 @@ const gulp = require('gulp'),
  ttf2woff = require('gulp-ttf2woff'),
  ttf2woff2 = require('gulp-ttf2woff2');
 
-
 // порядок подкл css
 const styleFiles = [
  './src/styles/common/header.scss',
