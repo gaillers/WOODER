@@ -4,7 +4,7 @@ Html
 
 Scss
 
-Jquery 
+JS + Jquery 
 
 Adaptive + Responsive 1440 | 1180 laptop | 900 laptop | 768 laptop + mobile | 450 mobile S |
 
