@@ -54,6 +54,10 @@ document.addEventListener("DOMContentLoaded", function (event) {
     }, 0.2, "-=2");
   }, false);
 });
+var button = document.getElementById('burger-btn');
+button.addEventListener('click', function () {
+  swal('siderbar');
+});
 var scrolled; // Header > Wrapper-nav
 
 window.onscroll = function () {

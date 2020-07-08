@@ -53,6 +53,10 @@ document.addEventListener("DOMContentLoaded", function(event) {
     }, 0.2,"-=2")
 	},false);
 })
+let button = document.getElementById('burger-btn');
+ button.addEventListener('click', function () {
+  swal('siderbar')
+ });
 let scrolled; // Header > Wrapper-nav
 window.onscroll = function () {
   scrolled = window.pageYOffset || document.documentElement.scrollTop;
@@ -78,6 +82,7 @@ window.onscroll = function () {
     $('.wrapper-nav').css({ background: 'rgba(0, 0, 0, 0)', boxShadow: 'rgba(0, 0, 0, 0.0) 0px 0px 0px' });
   }
 };
+
 $(function(){  scroll // scroll Nav & Siderbar
   $('a[href^="#home"]').click(function(){
      var target = $(this).attr('href');

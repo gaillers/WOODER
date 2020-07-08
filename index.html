@@ -15,7 +15,7 @@
   <body>
     <header class="header lock-padding" id="home">
       <div class="wrapper-nav">
-       <div class="burger">
+       <div class="burger" id="burger-btn">
           <a href="#siderbar">
            <div></div>
            <p class="menu">Menu</p>
@@ -42,11 +42,12 @@
           </ul>
         </div>
         <div class="info">
-          <div class="info-icon popup-link">
-            <a href="#popup" class="popup-link"
+          <div class="info-icon" id="popup-link">
+            <a href="#popup"
               ><svg viewBox="0 0 512 512" class="info-svg" style="width: 23px; height: 22px;">
                 <use xlink:href="#info-p"></use>
-              </svg></a>
+              </svg>
+            </a>
           </div>
 
           <div class="language">
@@ -68,7 +69,7 @@
                 </p>
                 <p class="popup__telephone">Tel: 0(800) 500 40 90</p>
                 <p class="popup__email">Email: wooder@gmail.com</p>
-                <a href="#" class="popup__close close-popup">X</a>
+                <a href="#" class="popup__close close-popup" id="popupClose">X</a>
               </div>
             </div>
           </div>
