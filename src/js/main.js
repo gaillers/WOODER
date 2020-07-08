@@ -53,10 +53,6 @@ document.addEventListener("DOMContentLoaded", function(event) {
     }, 0.2,"-=2")
 	},false);
 })
-let button = document.getElementById('burger-btn');
- button.addEventListener('click', function () {
-  swal('siderbar')
- });
 let scrolled; // Header > Wrapper-nav
 window.onscroll = function () {
   scrolled = window.pageYOffset || document.documentElement.scrollTop;
