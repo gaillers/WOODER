@@ -15,7 +15,7 @@
   <body>
     <header class="header lock-padding" id="home">
       <div class="wrapper-nav">
-       <div class="burger" id="burger-btn">
+       <div class="burger" id="burgerOpen">
           <a href="#siderbar">
            <div></div>
            <p class="menu">Menu</p>
@@ -27,7 +27,7 @@
             <p href="#home">Wooder</p>
           </div>
           <ul class="nav__link">
-            <li class="link">
+            <li class="link ">
               <a href="#home">Home</a>
             </li>
             <li class="link">
@@ -42,22 +42,30 @@
           </ul>
         </div>
         <div class="info">
-          <div class="info-icon" id="popup-link">
-            <a href="#popup"
-              ><svg viewBox="0 0 512 512" class="info-svg" style="width: 23px; height: 22px;">
+          <div class="info-icon" id="infoIcon">
+            
+              <svg viewBox="0 0 512 512" class="info-svg" style="width: 23px; height: 22px;">
                 <use xlink:href="#info-p"></use>
               </svg>
-            </a>
+            
           </div>
-
-          <div class="language">
-            <h6>EU</h6>
+           <div class="language">
+            <div class="lang-items">
+              <div class="english">
+                <h6>EN</h6>
+              </div>
+              <div class="russian">
+                <h6>RU</h6>
+              </div>
+              <div class="ukrainian">
+                <h6>UA</h6>
+              </div>
+            </div>
             <div class="language-buttom"></div>
           </div>
-
-          <div id="popup" class="popup">
+          <div id="popupMain" class="popup">
             <div class="popup__body">
-              <div class="popup__content">
+              <div class="popup__content" id="popupContent">
                 <p class="popup__infopar" id="infopar">
                   This website provides you with the ability to get acquainted
                   with the Wooder Company, assess the provided products and
@@ -69,7 +77,7 @@
                 </p>
                 <p class="popup__telephone">Tel: 0(800) 500 40 90</p>
                 <p class="popup__email">Email: wooder@gmail.com</p>
-                <a href="#close" class="popup__close close-popup" id="popupClose">X</a>
+                <!-- <div class="popup__close close-popup" id="popupClose">X</div> -->
               </div>
             </div>
           </div>
@@ -185,7 +193,7 @@
           <div class="video-column">
             <div class="video-circle">
               <div class="video-image">
-                <img src="./src/images/png/innovative.png" alt="innovative">
+                <img class="video-img" src="./src/images/png/innovative.png" alt="innovative">
               </div>
               <div class="play">
                <div class="play-circle">
@@ -198,7 +206,7 @@
           <div class="video-column">
             <div class="video-circle">
               <div class="video-image">
-                <img src="./src/images/png/high-level.png" alt="high-level">
+                <img class="video-img" src="./src/images/png/high-level.png" alt="high-level">
               </div>
               <div class="play">
                 <div class="play-circle">
@@ -211,7 +219,7 @@
           <div class="video-column">
             <div class="video-circle">
               <div class="video-image">
-                <img src="./src/images/png/quality.png" alt="quality">
+                <img class="video-img" src="./src/images/png/quality.png" alt="quality">
               </div>
               <div class="play">
                 <div class="play-circle">

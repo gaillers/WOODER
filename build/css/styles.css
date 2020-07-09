@@ -258,7 +258,8 @@
 
 .info-icon {
   width: 23px;
-  height: 22px; }
+  height: 22px;
+  cursor: pointer; }
 
 .popup {
   position: fixed;
@@ -266,15 +267,9 @@
   height: 100%;
   top: 0;
   left: 0;
-  opacity: 0;
   visibility: hidden;
-  transition: all 0.8s ease 0s; }
-  .popup:target {
-    opacity: 1;
-    visibility: visible; }
-    .popup:target .popup__content {
-      transform: translate(0px, 0px);
-      opacity: 1; }
+  transition: all 0.8s ease 0s;
+  transform: translate(0px, 0px); }
 
 .popup__body {
   min-height: 100%;
@@ -287,7 +282,7 @@
   font-family: 'ProximaNova';
   color: #ffffff80;
   position: absolute;
-  margin-top: 4%;
+  margin-top: 13%;
   padding: 1% 1% 0% 1%;
   width: 40%;
   text-align: center;
@@ -300,13 +295,6 @@
   .popup__content p {
     margin-top: 0;
     margin-bottom: 1rem; }
-  .popup__content a {
-    position: absolute;
-    right: 10px;
-    font-size: 20px;
-    text-decoration: none;
-    color: #bea67c;
-    top: 138px; }
 
 .popup__telephone,
 .popup__email {
@@ -317,24 +305,67 @@
   margin: 0;
   margin: 2px 0 0 50px;
   cursor: pointer; }
-  .language h6 {
-    opacity: 0.5;
-    font-family: 'ProximaNova';
-    font-size: 15px;
-    font-weight: bold;
-    font-stretch: normal;
-    font-style: normal;
-    line-height: normal;
-    letter-spacing: 0.75px;
-    text-align: left;
-    color: #ffffff80;
-    margin: 0; }
+
+.lang-items h6 {
+  opacity: 1;
+  font-family: 'ProximaNova';
+  font-size: 15px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: 0.75px;
+  text-align: left;
+  color: #ffffff80;
+  margin: 0; }
+
+.lang-items .english {
+  position: absolute;
+  z-index: 3;
+  opacity: .5;
+  color: #ffffff80;
+  transition: all 0.8s ease 0s;
+  font-family: 'ProximaNova';
+  font-size: 15px;
+  font-weight: bold;
+  letter-spacing: 0.75px;
+  text-align: left;
+  color: #ffffff80; }
+
+.lang-items .russian {
+  position: relative;
+  opacity: 0;
+  transition: margin-top 0.5s, opacity 0.5s;
+  z-index: 1;
+  font-family: 'ProximaNova';
+  font-size: 15px;
+  font-weight: bold;
+  letter-spacing: 0.75px;
+  text-align: left;
+  color: #ffffff80; }
+
+.lang-items .ukrainian {
+  position: relative;
+  margin-top: -1.5em;
+  opacity: 0;
+  transition: margin-top 0.8s, opacity 0.8s;
+  z-index: 1;
+  font-family: 'ProximaNova';
+  font-size: 15px;
+  font-weight: bold;
+  letter-spacing: 0.75px;
+  text-align: left;
+  color: #ffffff80; }
 
 .language-buttom {
-  border: 5px solid transparent;
-  border-top: 6px solid #a9946e;
-  margin-left: 10px;
-  margin-top: 6px; }
+  margin-left: 0.5rem;
+  margin-top: 0.4em;
+  width: 0px;
+  height: 0px;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-top: 5px solid #bea67c;
+  transition: all 500ms ease 0s; }
 
 .background {
   width: 100%;
