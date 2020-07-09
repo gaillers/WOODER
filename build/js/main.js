@@ -210,6 +210,14 @@ document.addEventListener("scroll", function () {
     circleThree.style.opacity = '.5', circleThree.style.backgroundColor = '#303030';
     circleFour.style.opacity = '1', circleFour.style.backgroundColor = '#bea67c';
   }
+});
+$('.burger').on('click', function () {
+  // open sidebar
+  $('.sidebar').toggleClass('sidebar-open');
+});
+$('.close-sidebar').not('.sidebar').click(function () {
+  // close sidebar
+  $('.sidebar').removeClass('sidebar-open');
 }); // Popup 
 
 var informationToggle = false;

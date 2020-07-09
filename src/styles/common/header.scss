@@ -10,7 +10,7 @@
   position: fixed;
   justify-content: space-between;
   align-items: center;
-  z-index: 2;
+  z-index: 5;
 }
 .burger {
   position: relative;
@@ -47,40 +47,38 @@
     }
   }
 }
-// <siderbar>
-.siderbar {
+// <sidebar>
+.sidebar {
   position: fixed;
   width: 300px;
   height: 100%;
   background: #000;
-  z-index: 1000;
+  z-index: 15;
   background-size: 500% 100%;
   background-position: 30% 100%;
   box-shadow: 0 0 12px rgba(0, 0, 0, 1);
   opacity: 0;
   visibility: hidden;
-  transition: all 0.8s ease 0s;
-  transform: translate(-200px, 0px);
   background: url(/src/images/png/video-background.png);
   background-size: 500% 100%;
   background-position: 60% 100%;
-  &:target {
-    // target css
-    // Open JS
+  transform: translate(-200px, 0px);
+  transition: all 0.8s ease 0s;
+}
+.sidebar-open {
+  opacity: 1;
+  visibility: visible;
+  transform: translate(0, 0px);
+  .sidebar-menu {
+    transform: translate(0px, 0px);
     opacity: 1;
-    visibility: visible;
-    transform: translate(0, 0px);
-    .siderbar-menu {
-      transform: translate(0px, 0px);
-      opacity: 1;
-    }
   }
 }
-.siderbar-menu {
+.sidebar-menu {
   margin-top: 100%;
   padding-left: 10%;
 }
-.siderbar-mene__item,
+.sidebar-mene__item,
 .home,
 .products,
 .howwework,
@@ -125,7 +123,7 @@
   background-color: #bea67c;
   transition: 400ms;
 }
-.close {
+.close-sidebar {
   position: absolute;
   width: 33px;
   height: 25px;
@@ -156,7 +154,7 @@
     transform: rotate(45deg);
   }
 }
-// </siderbar>
+// </sidebar>
 
 .menu {
   width: 43px;
@@ -307,17 +305,17 @@
     margin-top: 0;
     margin-bottom: 1rem;
   }
-  // .close-popup {
-  //   // button close popup
-  //   position: absolute;
-  //   right: 10px;
-  //   font-size: 20px;
-  //   text-decoration: none;
-  //   color: #bea67c;
-  //   top: 138px;
-  //   user-select:none;
-  //   cursor: pointer;
-  // }
+  .close-popup {
+    // button close popup
+    position: absolute;
+    right: 10px;
+    font-size: 20px;
+    text-decoration: none;
+    color: #bea67c;
+    top: 138px;
+    user-select:none;
+    cursor: pointer;
+  }
 }
 .popup__telephone,
 .popup__email {
@@ -348,7 +346,7 @@
   .english {
     position: absolute;
     z-index: 3;
-    opacity: .5;
+    opacity: 0.5;
     color: #ffffff80;
     transition: all 0.8s ease 0s;
     font-family: 'ProximaNova';

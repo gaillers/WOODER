@@ -146,6 +146,14 @@ document.addEventListener("scroll", function() {
   circleFour.style.opacity = '1',circleFour.style.backgroundColor = '#bea67c';
 }
 });
+
+$('.burger').on('click',function(){ // open sidebar
+	$('.sidebar').toggleClass('sidebar-open')
+})
+$('.close-sidebar').not('.sidebar').click(function() { // close sidebar
+	$('.sidebar').removeClass('sidebar-open'); 
+});
+
 // Popup 
 let informationToggle = false
 $('#infoIcon').click(function(){
@@ -158,6 +166,7 @@ $('#infoIcon').click(function(){
 		informationToggle = false
 	};
 })
+
 // Language 
 let languageToggle = false
 let chosenLanguage = 'EN'

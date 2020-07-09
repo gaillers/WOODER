@@ -10,7 +10,7 @@
   position: fixed;
   justify-content: space-between;
   align-items: center;
-  z-index: 2; }
+  z-index: 5; }
 
 .burger {
   position: relative;
@@ -44,35 +44,36 @@
       background-color: #bea67c;
       top: 9px; }
 
-.siderbar {
+.sidebar {
   position: fixed;
   width: 300px;
   height: 100%;
   background: #000;
-  z-index: 1000;
+  z-index: 15;
   background-size: 500% 100%;
   background-position: 30% 100%;
   box-shadow: 0 0 12px black;
   opacity: 0;
   visibility: hidden;
-  transition: all 0.8s ease 0s;
-  transform: translate(-200px, 0px);
   background: url(/src/images/png/video-background.png);
   background-size: 500% 100%;
-  background-position: 60% 100%; }
-  .siderbar:target {
-    opacity: 1;
-    visibility: visible;
-    transform: translate(0, 0px); }
-    .siderbar:target .siderbar-menu {
-      transform: translate(0px, 0px);
-      opacity: 1; }
+  background-position: 60% 100%;
+  transform: translate(-200px, 0px);
+  transition: all 0.8s ease 0s; }
 
-.siderbar-menu {
+.sidebar-open {
+  opacity: 1;
+  visibility: visible;
+  transform: translate(0, 0px); }
+  .sidebar-open .sidebar-menu {
+    transform: translate(0px, 0px);
+    opacity: 1; }
+
+.sidebar-menu {
   margin-top: 100%;
   padding-left: 10%; }
 
-.siderbar-mene__item,
+.sidebar-mene__item,
 .home,
 .products,
 .howwework,
@@ -84,13 +85,13 @@
   text-transform: uppercase;
   margin-bottom: 12%;
   font-weight: bold; }
-  .siderbar-mene__item a,
+  .sidebar-mene__item a,
   .home a,
   .products a,
   .howwework a,
   .about a {
     color: #bea67c; }
-    .siderbar-mene__item a::after,
+    .sidebar-mene__item a::after,
     .home a::after,
     .products a::after,
     .howwework a::after,
@@ -103,7 +104,7 @@
       height: 2px;
       width: 0%;
       transition: all 0.8s ease 0s; }
-    .siderbar-mene__item a:hover::after,
+    .sidebar-mene__item a:hover::after,
     .home a:hover::after,
     .products a:hover::after,
     .howwework a:hover::after,
@@ -124,7 +125,7 @@
   background-color: #bea67c;
   transition: 400ms; }
 
-.close {
+.close-sidebar {
   position: absolute;
   width: 33px;
   height: 25px;
@@ -133,7 +134,7 @@
   top: -264px;
   left: 30px;
   cursor: pointer; }
-  .close::before {
+  .close-sidebar::before {
     content: '';
     width: 25px;
     height: 1px;
@@ -143,7 +144,7 @@
     transform: rotate(-45deg);
     top: 13px;
     left: 2.5px; }
-  .close::after {
+  .close-sidebar::after {
     content: '';
     width: 25px;
     height: 1px;
@@ -295,6 +296,18 @@
   .popup__content p {
     margin-top: 0;
     margin-bottom: 1rem; }
+  .popup__content .close-popup {
+    position: absolute;
+    right: 10px;
+    font-size: 20px;
+    text-decoration: none;
+    color: #bea67c;
+    top: 138px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    cursor: pointer; }
 
 .popup__telephone,
 .popup__email {
@@ -322,7 +335,7 @@
 .lang-items .english {
   position: absolute;
   z-index: 3;
-  opacity: .5;
+  opacity: 0.5;
   color: #ffffff80;
   transition: all 0.8s ease 0s;
   font-family: 'ProximaNova';
@@ -1512,11 +1525,11 @@
     display: none; }
   .nav {
     padding-left: 16%; }
-  .siderbar {
-    width: 100%;
+  .sidebar {
+    width: 768px;
     height: 100%;
     background: url(/src/images/png/video-background.png);
-    z-index: 3;
+    z-index: 15;
     box-shadow: 0 0 12px #000;
     opacity: 0;
     visibility: hidden;
@@ -1524,15 +1537,27 @@
     transform: translate(-200px, 0);
     background-size: 350%;
     background-position: 60%; }
-  .siderbar-menu {
-    margin-top: 34%;
+  .sidebar-open {
+    opacity: 1;
+    visibility: visible;
+    transform: translate(0, 0px); }
+  .sidebar-menu {
+    margin-top: 36%;
     text-align: center;
     padding-left: 0; }
+  .close-sidebar {
+    position: absolute;
+    width: 33px;
+    height: 25px;
+    border-radius: 1.5px;
+    opacity: 0.8;
+    top: -235px;
+    left: 30px; }
   .about,
   .home,
   .howwework,
   .products,
-  .siderbar-mene__item {
+  .sidebar-mene__item {
     font-size: 1.7em;
     margin-bottom: 10%; }
   .close {
@@ -1649,12 +1674,12 @@
     background-color: #bea67c;
     margin-left: 46px;
     margin-top: 17px; }
-  .siderbar {
+  .sidebar {
     position: fixed;
     width: 600px;
     height: 100%;
     background: url(/src/images/png/video-background.png);
-    z-index: 3;
+    z-index: 10;
     box-shadow: 0 0 12px #000;
     opacity: 0;
     visibility: hidden;
@@ -1662,22 +1687,19 @@
     transform: translate(-200px, 0);
     background-size: 350%;
     background-position: 60%; }
-    .siderbar:target {
-      opacity: 1;
-      visibility: visible;
-      transform: translate(0, 0px); }
-      .siderbar:target .siderbar-menu {
-        transform: translate(0px, 0px);
-        opacity: 1; }
-  .siderbar-menu {
-    margin-top: 43%;
-    text-align: center;
-    padding-left: 0px; }
+  .sidebar-open {
+    opacity: 1;
+    visibility: visible;
+    transform: translate(0, 0px); }
+    .sidebar-open .sidebar-menu {
+      margin-top: 45%;
+      text-align: center;
+      padding-left: 0px; }
   .about,
   .home,
   .howwework,
   .products,
-  .siderbar-mene__item {
+  .sidebar-mene__item {
     font-size: 1.7em;
     margin-bottom: 10%; }
   .close {
@@ -1857,20 +1879,18 @@
       margin-top: 12px; }
   .info {
     padding-right: 32px; }
-  .siderbar {
+  .sidebar {
     width: 450px;
     height: 100%;
     background: url(/src/images/png/video-background.png) 60%/450%; }
-    .siderbar:target {
+  .sidebar-open {
+    opacity: 1;
+    visibility: visible;
+    transform: translate(0, 0px); }
+    .sidebar-open .sidebar-menu {
+      transform: translate(0px, 0px);
       opacity: 1;
-      visibility: visible;
-      transform: translate(0, 0px); }
-      .siderbar:target .siderbar-menu {
-        transform: translate(0px, 0px);
-        opacity: 1; }
-  .siderbar-menu {
-    margin-top: 57%;
-    text-align: center; }
+      margin-top: 59%; }
   .centre__main-centre {
     max-width: 450px;
     width: 100%;
