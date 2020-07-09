@@ -1667,6 +1667,8 @@
     margin-bottom: 265px; }
   .nav {
     padding-left: 20%; }
+  .wrapper-nav {
+    height: 71px; }
   .logo .line-wooder {
     position: absolute;
     width: 60px;
@@ -1863,6 +1865,8 @@
       width: 100%; } }
 
 @media screen and (max-width: 450px) {
+  .wrapper-nav {
+    height: 71px; }
   .menu {
     font-size: 0.8rem;
     margin-top: 3px; }
