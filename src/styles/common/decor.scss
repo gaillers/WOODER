@@ -68,6 +68,7 @@
   color: #000;
   top: 92%;
   left: 94.4%;
+  user-select: none;    
   &::before {
     width: 4px;
     height: 51px;
@@ -104,4 +105,5 @@
   text-transform: uppercase;
   top: 30%;
   right: 55%;
+  user-select: none;    
 }

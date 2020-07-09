@@ -140,6 +140,7 @@
   color: #000;
   top: 92%;
   right: 95.4%;
+  user-select: none;    
   &::before {
     width: 4px;
     height: 51px;
@@ -175,6 +176,7 @@
   text-transform: uppercase;
   top: 30%;
   left: 38.7%;
+  user-select: none;    
 }
 .d {
   width: 240px;
@@ -186,4 +188,5 @@
   position: absolute;
   top: 90%;
   left: 68%;
+  user-select: none;    
 }

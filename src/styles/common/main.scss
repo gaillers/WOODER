@@ -26,6 +26,7 @@
   margin: 0 auto;
   left: 52%;
   top: 42.8%;
+  user-select: none;    
   &::after {
     content: '';
     position: absolute;
@@ -73,6 +74,7 @@
   color: #bea67c;
   text-transform: uppercase;
   z-index: -2;
+  user-select: none;    
 }
 // </left-container>
 .centre {
@@ -101,6 +103,7 @@
   margin-bottom: 60px;
   margin-top: 0px;
   margin-left: 0px;
+  user-select: none;    
 }
 .button-main {
   display: flex;
@@ -262,6 +265,7 @@
   max-width: 650px;
 }
 .right-container__main-text {
+  user-select: none;    
   width: 215px;
   height: 98px;
   opacity: 0.2;
