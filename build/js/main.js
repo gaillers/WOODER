@@ -146,6 +146,17 @@ $(function () {
     return false;
   });
 });
+$("body").niceScroll({
+  cursorcolor: "#eecf9b",
+  cursorwidth: "5px",
+  cursorborder: "none",
+  zindex: "auto",
+  scrollspeed: 100,
+  autohidemode: false,
+  enablekeyboard: false,
+  horizrailenabled: false,
+  touchactive: false
+});
 var circleOne = document.getElementById('circle one');
 var circleTwo = document.getElementById('circle two');
 var circleThree = document.getElementById('circle three');

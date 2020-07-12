@@ -99,6 +99,21 @@ $(function(){  scroll // scroll Nav & Siderbar
   });
 });
 
+$("body").niceScroll({
+	cursorcolor:"#eecf9b",
+	cursorwidth:"5px",
+	cursorborder:"none",
+	zindex: "auto",
+	scrollspeed: 100,
+	autohidemode: false,
+	enablekeyboard: false,
+	horizrailenabled: false,
+	touchactive: false,
+});
+
+
+
+
 let circleOne = document.getElementById('circle one')
 let circleTwo = document.getElementById('circle two')
 let circleThree = document.getElementById('circle three')
@@ -409,6 +424,7 @@ if (!languageToggle) {
 // 		$('#aboutUsParagraph').text('We are a team of professionals in the wood-processing and the creation of wooden furniture of the highest class')
 // 	}
 // }
+
 
 
  
